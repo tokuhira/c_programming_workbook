@@ -8,19 +8,22 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     printf("買い物を3回します\n");/*C言語が用意している画面に文字列を表示する命令（関数）です。「"」で囲まれた文字列が画面に表示されます。最後の「|n");」は半角文字でなけれはなりません。最後の「|n");」は改行を意味しています。*/
     printf("1回目の金額を入力してください");/*C言語が用意している画面に文字列を表示する命令（関数）です。「"」で囲まれた文字列が画面に表示されます。*/
     scanf("%d",&price1);/*入力した金額を「price1」という変数に格納しています。*/
+    subtotal=subtotal+price1;
     
     printf("2回目の金額を入力してください");/*C言語が用意している画面に文字列を表示する命令（関数）です。「"」で囲まれた文字列が画面に表示されます。*/
-    scanf("%d",&price2);/*入力した金額を「price2」という変数に格納しています。*/
+    scanf("%d",&price1);/*入力した金額を「price1」という変数に格納しています。*/
+    subtotal=subtotal+price1;
     
     printf("3回目の金額を入力してください");/*C言語が用意している画面に文字列を表示する命令（関数）です。「"」で囲まれた文字列が画面に表示されます。*/
-    scanf("%d",&price3);/*入力した金額を「price3」という変数に格納しています。*/
+    scanf("%d",&price1);/*入力した金額を「price1」という変数に格納しています。*/
+    subtotal=subtotal+price1;
     
-    subtotal=price1+price2+price3;/*「price1」と「price2」と「price3」を加算した結果を「subtotal」に代入しています。ここでは3回分の買い物金額の小計を計算しています。*/
-    tax_price=subtotal*TAX_RATE;/*「subtotal」と「TAX_RATE」を乗算した結果を「tax_price」に代入しています。ここでは小計に消費税率をかけて消費税額を計算しています*/
+    tax_price=subtotal*subtotal*TAX_RATE;/*「subtotal」と「TAX_RATE」を乗算した結果を「tax_price」に代入しています。ここでは小計に消費税率をかけて消費税額を計算しています*/
     total=subtotal+tax_price;/*「subtotal」「tax_price」を加算した結果を「total」に代入しています。ここでは小計と消費税額を足して合計金額を求めています*/
     
     printf("小計：%d円です。",subtotal);/*subtotalという名前の変数に格納された小計を画面に表示しています*/
     printf("消費税額：%d円です。",tax_price);/*tax_priceという名前の変数に格納された消費税額を画面に表示しています*/
     printf("合計：%d円です。\n",total);/*totalという名前の変数に格納された小計を画面に表示しています*/
+    
     return 0;/*プログラムを終了する命令です*/
 }/*「main(void){」で始まり「}」で終わります*/
