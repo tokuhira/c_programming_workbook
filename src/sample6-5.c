@@ -18,7 +18,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     scanf("%d",&price1);/*入力した金額を「price1」という変数に格納しています。*/
     subtotal=subtotal+price1;
     
-    tax_price=subtotal*subtotal*TAX_RATE;/*「subtotal」と「TAX_RATE」を乗算した結果を「tax_price」に代入しています。ここでは小計に消費税率をかけて消費税額を計算しています*/
+    tax_price=subtotal*TAX_RATE;/*「subtotal」と「TAX_RATE」を乗算した結果を「tax_price」に代入しています。ここでは小計に消費税率をかけて消費税額を計算しています*/
     total=subtotal+tax_price;/*「subtotal」「tax_price」を加算した結果を「total」に代入しています。ここでは小計と消費税額を足して合計金額を求めています*/
     
     printf("小計：%d円です。",subtotal);/*subtotalという名前の変数に格納された小計を画面に表示しています*/
