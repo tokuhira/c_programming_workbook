@@ -11,7 +11,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     printf("");
     scanf("%d",&money);
     
-    price("\n\n\n");
+    printf("\n\n\n");
     
     /*おつり*/
     change=money-price;
