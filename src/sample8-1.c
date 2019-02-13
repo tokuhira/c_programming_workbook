@@ -4,15 +4,15 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
 {/*「main(void){」で始まり「}」で終わります*/
     int age;
     
-    printf("");
-    scanf("%d"&age);
-    printf("\n",age);
+    printf("あなたの年齢は？");
+    scanf("%d",&age); /* ←カンマが抜けてましたよ */
+    printf("あなたの年齢は%d歳です。\n",age);
     
     if(age>=20){
-        printf("\n");
+        printf("飲酒できます。\n");
         
     }else{
-        printf("\n");
+        printf("未成年なので飲酒できません。\n");
     }
     
     return 0;/*プログラムを終了する命令です*/

@@ -8,15 +8,17 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     double bmi=0.0;
     double standard_weight=0.0;
     
-    printf("\n");
-    printf("\n");
-    printf("\n");
-    printf("\n");
+    printf("これからあなたのBMIを測定します。\n");
+    printf("必要な情報を入力してください。\n");
+    printf("------------------------------------\n");
+    printf("あなたの身長は(cm)？\n");
     scanf("%lf",&height);
-    printf("\n");
+    printf("あなたの体重は(kg)？\n");
     scanf("%lf",&height);
     
+    /* センチ(cm)からメートル(m)に変換 */
     meter_height=height/100.0;
+    /* BMIの計算 */
     bmi=weight/(meter_height*meter_height);
     
     return 0;/*プログラムを終了する命令です*/
