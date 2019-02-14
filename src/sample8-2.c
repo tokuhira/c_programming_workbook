@@ -20,25 +20,25 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     meter_height=height/100.0;
     /* BMIの計算 */
     bmi=weight/(meter_height*meter_height);
-    
+    /* 標準体重の計算 */
     standard_weight=(meter_height*meter_height)*22;
-    
+    /* 結果の出力 */
     printf("\n");
-    printf("\n",height);
-    printf("\n",weight);
-    printf("\n",bmi);
-    printf("\n",height,standard_weight);
+    printf("あなたの身長は です。\n",height);
+    printf("あたなの体重は です。\n",weight);
+    printf("あたなのBMIは です。\n",bmi);
+    printf("身長 の方の標準体重は kgです。\n",height,standard_weight);
     
-    
-    printf("");
+    /* 判定結果の出力 */
+    printf("あたなのBMI判定は，");
     if(bmi<18.5){
-        printf("\n");
+        printf("やせぎみです。\n");
     }else if(bmi<25.0){
-        printf("\n");
+        printf("標準です。\n");
     }else if(bmi<30){
-        printf("\n");
+        printf("肥満気味です。\n");
     }else{
-        printf("\n");
+        printf("高度肥満です。\n");
     }
     return 0;/*プログラムを終了する命令です*/
 }/*「main(void){」で始まり「}」で終わります*/
