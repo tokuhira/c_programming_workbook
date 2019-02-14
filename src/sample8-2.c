@@ -21,5 +21,24 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     /* BMIの計算 */
     bmi=weight/(meter_height*meter_height);
     
+    standard_weight=(meter_height*meter_height)*22;
+    
+    printf("\n");
+    printf("\n",height);
+    printf("\n",weight);
+    printf("\n",bmi);
+    printf("\n",height,standard_weight);
+    
+    
+    printf("");
+    if(bmi<18.5){
+        printf("\n");
+    }else if(bmi<25.0){
+        printf("\n");
+    }else if(bmi<30){
+        printf("\n");
+    }else{
+        printf("\n");
+    }
     return 0;/*プログラムを終了する命令です*/
 }/*「main(void){」で始まり「}」で終わります*/
