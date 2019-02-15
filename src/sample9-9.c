@@ -5,11 +5,11 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     int counter;
     int total;
     
-
+    /* 最初に総和を0にする */
     total=0;
 
     for(counter=0;counter<10;counter++){
-
+        /* 総和にカウンタの値を加えていく */
         total=total+counter;
         printf("counter=%d,total=%d\n",counter,total);
     }
