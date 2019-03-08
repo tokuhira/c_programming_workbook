@@ -15,10 +15,8 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     printf("２回目の金額を入力してください。\n");
     scanf("%d",&price[1]);
 
-    /*
     printf("３回目の金額を入力してください。\n");
     scanf("%d",&price[2]);
-     */
 
     subtotal=price[0]+price[1]+price[2];
     tax=subtotal*TAX_RATE;
