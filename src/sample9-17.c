@@ -16,4 +16,5 @@ int main(void)
     printf("平均=%f",mean);
 
     return 0;
+    
 }
