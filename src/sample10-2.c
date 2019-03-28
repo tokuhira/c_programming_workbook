@@ -5,7 +5,7 @@ int main(void)
     int counter;
     double kisyo[2][12];/*double型のkisyoという名前の箱を2×12個用意しています。このような箱を多次元配列と言います。*/
 
-    printf("\n");
+    printf("各月の平均気温と降水量を入力してください\n");
 
     for(counter=0;counter<12;counter++){
         printf("%2d 月 = ",counter+1);

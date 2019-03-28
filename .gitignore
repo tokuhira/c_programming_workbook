@@ -52,5 +52,6 @@ Mkfile.old
 dkms.conf
 
 # And more...
+.vscode
 .DS_Store
 *.swp

@@ -6,7 +6,7 @@ int main(void)
     double kion[12];
     double kosuiryo[12]=0;
 
-    printf("\n");
+    printf("各月の平均気温と降水量を入力してください\n");
 
     for(counter=0;counter<12;counter++){
         printf("%2d 月=",counter+1);
