@@ -10,7 +10,7 @@ int main(void)
     index=-1;
     /*例えば無意味な値を入れておく。見つからなかったら-1ままのはず*/
 
-    printf("入力\n");
+    printf("検索する数字を入力してください\n");
     scanf("%d",&data);
 
     for(counter=0;counter<5;counter++){
