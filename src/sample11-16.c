@@ -4,7 +4,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
 {/*「main(void){」で始まり「}」で終わります*/
     int index;
     int data[10];
-    /**/
+    /* まず入力 */
     for(index=0;index<10;index++){
         scanf("%d",&data[index]);
     }
