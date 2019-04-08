@@ -7,7 +7,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     int sagasu;
     int mitsuketa=0;
     
-    printf("\n");
+    printf("探すデータは何ですか？\n");
     scanf("%d",&sagasu);
 
     for(index=0;index<10;index++){
@@ -17,9 +17,9 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
         }
     }
     if(mitsuketa==1){
-        printf("\n");
+        printf("見つけた\n");
     }else{
-        printf("\n");
+        printf("見つからなかった\n");
     }
     
     return 0;/*プログラムを終了する命令です*/

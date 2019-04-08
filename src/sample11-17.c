@@ -6,7 +6,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     int data[10];
     /* まず入力 */
     for(index=0;index<10;index++){
-        printf("data[%d]",index);
+        printf("data[%d] の値を入れてください: ",index);
         scanf("%d",&data[index]);
     }
     for(index=0;index<10;index++){
