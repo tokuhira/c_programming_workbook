@@ -2,10 +2,10 @@
 
 int main(void)/*C言語のプログラムでは「int main(void)」から実行が始まります*/
 {/*「main(void){」で始まり「}」で終わります*/
-    int month=0
+    int month=0;
     
     printf("\n");
-    scanf("%d",&month)
+    scanf("%d",&month);
     
     switch(month){
         case 1:
@@ -44,7 +44,7 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
         case 12:
             printf("%d月は師走です。\n",month);
             break;
-        befault:
+        default:
             printf("入力が間違っています。\n");
     }
     return 0;/*プログラムを終了する命令です*/

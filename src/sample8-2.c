@@ -24,10 +24,10 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     standard_weight=(meter_height*meter_height)*22;
     /* 結果の出力 */
     printf("\n");
-    printf("あなたの身長は です。\n",height);
-    printf("あたなの体重は です。\n",weight);
-    printf("あたなのBMIは です。\n",bmi);
-    printf("身長 の方の標準体重は kgです。\n",height,standard_weight);
+    printf("あなたの身長は %5.1f です。\n",height);
+    printf("あたなの体重は %5.1f です。\n",weight);
+    printf("あたなのBMIは %5.1f です。\n",bmi);
+    printf("身長 %5.1f の方の標準体重は %5.1f kgです。\n",height,standard_weight);
     
     /* 判定結果の出力 */
     printf("あたなのBMI判定は，");
