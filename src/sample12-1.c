@@ -9,9 +9,9 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
     double prate;
     int total = 0;
 
-    printf ("あなたの貯金がいくらになるか計算しましょう！\n");
+    printf ("あなたの貯金がいくらになるか計算しましょう！\n");//文字列の表示
     printf ("いくら預けますか？\n");
-    scanf ("%d", &money);
+    scanf ("%d", &money);//入力された数字を代入
 
     printf ("利率は何％ですか？\n");
     scanf ("%lf",&prate);
