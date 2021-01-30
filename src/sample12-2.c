@@ -26,8 +26,10 @@ int main(void)/*C言語のプログラムでは「int main(void)」から実行�
             break;
         }
         total = total * (1 + rata);
-        n++
+        n++;
     }
+
+    printf("合計%d 円になります。\n",total);
     
     return 0;/*プログラムを終了する命令です*/
 }/*「main(void){」で始まり「}」で終わります*/
