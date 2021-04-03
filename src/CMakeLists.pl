@@ -18,7 +18,7 @@ sub naturally { return my_cmp($a, $b) };
 
 # Header
 print <<__EOT__;
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.1)
 project( shakyo )
 __EOT__
 
